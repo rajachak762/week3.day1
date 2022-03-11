@@ -1,32 +1,38 @@
-package week3.day1;
+package org.student;
 
-public class Student {
-	
-	public void studentInfo() {
-		System.out.println(" This is my Student Info method");
-	}
-	
-	public void studentInfo(int id) {
-		System.out.println(" This is my Student Id method");
-	}
-	
-	public void studentInfo(int id, String name) {
-		System.out.println(" This is my Student Id and Name method " +id+ " , " +name+ " ");
-	}
-	
-	public void studentInfo(String phonenumber,String Email) {
-		System.out.println(" This is my Student phonenumber and Email method");
-	}
-	
-	public static void main(String args[]) {
-		
+import org.department.Department;
+
+public class Student extends Department{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Student ss = new Student();
-		ss.studentInfo();
-		ss.studentInfo(12456);
-		ss.studentInfo(12964, "Raja");
-		ss.studentInfo("9163860018", "rajac384@gmail.com");
-	}
+		ss.collegeCode();
+		ss.collegeName();
+		ss.collegeRank();
+		ss.deptName();
+		ss.studentDept();
+		ss.studentId();
+		ss.studentName();
 	
+	}
+		public void studentName() {
+			System.out.println(" The student name is Raja");
+		}
+		
+		public void studentDept() {
+			System.out.println(" The student dept is IT");
+		}
+		
+		public void studentId() {
+			System.out.println(" The student dept is 24508");
+		}
+		
+		
+		
+
+	}
+
 	
 
-}
+
